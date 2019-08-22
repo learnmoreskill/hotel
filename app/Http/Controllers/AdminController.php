@@ -54,9 +54,9 @@ class AdminController extends Controller
     public function check_password(Request $request)
     {
 
-        if ($request->old_password == Auth::user()->password) {
+        if (password_verify($request->old_password,Auth::user()->password)) {
             $user = User::find(Auth::user()->id);
-            $user->password = $request->new_password;
+            $user->password = bcrypt($request->new_password);
             $user->save();
             return redirect()->route('dashboard')->with('success', 'Password Changed Successful');
         }

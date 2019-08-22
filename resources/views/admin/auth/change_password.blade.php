@@ -50,7 +50,7 @@
                                             <label class="float-label">Old Password</label>
                                         </div>
                                         <div class="form-group form-default form-static-label">
-                                            <input type="password" name="password" id="password" class="form-control" onkeyup="check()" placeholder="Enter New Password" required="">
+                                            <input type="password" name="new_password" id="password" class="form-control" onkeyup="check()" placeholder="Enter New Password" required="">
                                             <span class="form-bar"></span>
                                             <label class="float-label">New Password</label>
                                         </div>
