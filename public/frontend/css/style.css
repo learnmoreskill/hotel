@@ -2066,7 +2066,7 @@ a:hover {
 .image-absolute {
     position: absolute;
     width: 50%;
-    right: -50px;
+    right: 0px;
     border: 7px solid #fff;
     z-index: 9;
     bottom: -50px;
